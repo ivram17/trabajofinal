@@ -4,13 +4,13 @@ body{background-color: black;
 
 header h1{
     color: white;
-    font-size: 3em;
+    font-size: 2em;
     letter-spacing: 0.3em;}
 
 
 nav{
     background-color:sienna;
-    height: 15vh;
+    height: 14vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -51,7 +51,8 @@ nav ul il a:hover{
     }
 #ckbox{display: none;}
 
-main {width: 80%;}
+main {width: 80%;
+}
 /*main inicio*/
 .contportada {
     display: grid;
@@ -63,13 +64,14 @@ main {width: 80%;}
     height: 75vh;
     border-radius: 15px;
     justify-content:space-between;
+    font-size: 1em;
     } 
 .textop {margin-top:5em;
         grid-column: 1;
         color:sienna;
         text-align: center;
         letter-spacing: 0.2em;}
-/*.textop p{ text-align: left;}*/
+
 
 .iportada img{height: 75vh;
     grid-column: 2;} 
@@ -117,7 +119,7 @@ aside{
 .maps p{color: gray;
     font-size: larger;}
 /*productos*/
-section{ margin-top: 6em;}
+section{ margin-top: 9em;}
 section h3{color:sienna;
     margin-left:2em;
     letter-spacing: 0.3em;}
