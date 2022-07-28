@@ -1,5 +1,6 @@
 body{background-color: black;
-    width: 100%;}
+    width: 99%;}
+
 
 header h1{
     color: white;
@@ -27,7 +28,7 @@ nav ul il a{
     font-size: 1em;
     padding: .4em 1em;
     letter-spacing: 0.5px;}
-.nav1{
+*{
     margin: 0;
     padding: 0;
     text-decoration:none;
@@ -77,18 +78,19 @@ main {width: 80%;}
 .textop h5{ margin-top: 1em;}
 .textop button{margin-top: 2em;}
 
-    
+/*aside*/   
 aside{ 
-  
+    
     width: 20%;
     height: 85vh;
     float: right;
     background-color: rgba(36, 35, 35, 0.628);
     padding: 1em;
     margin: 0em;
-    box-sizing:border-box;
-    margin-top: -700px;
-    z-index: 1;} 
+    /*box-sizing:border-box;*/
+    margin-top: -550px;
+    z-index: 100;} 
+.contaside {display: flex;}
 .wapps{margin-top: 0em;} 
 .wapps i{ display: flex;
     color:chartreuse;
