@@ -1,0 +1,208 @@
+body{background-color: black;}
+
+header h1{
+    color: white;
+    font-size: 3em;
+    letter-spacing: 0.3em;}
+
+
+nav{
+    background-color:sienna;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    }
+
+nav ul{
+    display: flex;
+}
+
+nav ul il{
+    border-right:solid darkgray;}  
+nav ul il a{
+    color: white;
+    font-size: 1em;
+    padding: .4em 1em;
+    letter-spacing: 0.5px;}
+.nav1{
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing: border-box;
+    }
+/*transicion nav*/
+nav ul il a:hover{
+    background-color: gray;
+    transition: all .3s;
+    }   
+.desplegable{
+    float:left;
+    cursor: pointer;
+    display: none;
+    margin-left: 1rem;
+    border: solid .1rem orangered;
+    padding: .2rem;
+    border-radius: .1rem;
+    }
+#ckbox{display: none;}
+
+main {width: 80%;}
+/*main inicio*/
+.contportada {
+    display: grid;
+    grid-template-columns:40% 60%;
+    grid-template-rows:auto;
+    padding: 2em;
+    column-gap:3em;
+    width: 80%;
+    height: 75vh;
+    border-radius: 15px;
+    justify-content:space-between;
+    } 
+.textop {margin-top:5em;
+        grid-column: 1;
+        color:sienna;
+        text-align: center;
+        letter-spacing: 0.2em;}
+/*.textop p{ text-align: left;}*/
+
+.iportada img{height: 75vh;
+    grid-column: 2;} 
+.textop img{width: 100px;
+    margin-top: 4em;}
+.textop h5{ margin-top: 1em;}
+.textop button{margin-top: 2em;}
+
+    
+aside{ 
+  
+    width: 20%;
+    height: 85vh;
+    float: right;
+    background-color: rgba(36, 35, 35, 0.628);
+    padding: 1em;
+    margin: 0em;
+    box-sizing:border-box;
+    margin-top: -700px;
+    z-index: 1;} 
+.wapps{margin-top: 0em;} 
+.wapps i{ display: flex;
+    color:chartreuse;
+    font-size: 3em;
+    align-items: center;
+    justify-content: center;
+    }
+.wappstext{ text-align: center;
+    font-size:larger;}
+.horarios i{ color:sienna;
+    font-size: 3em;
+    display:flex;
+    justify-content: center;}
+.iconoh { 
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;}  
+.maps{margin-top: 2em;
+    text-align: center;}
+.maps i{color:sienna;
+    font-size: 3em;
+    display:flex;
+    justify-content: center;}
+.maps p{color: gray;
+    font-size: larger;}
+/*productos*/
+section{ margin-top: 6em;}
+section h3{color:sienna;
+    margin-left:2em;
+    letter-spacing: 0.3em;}
+section .accordion-item{color: white;
+    background-color: sienna;}
+section .accordion-button{ color: gray;
+    background-color: black;
+    font-size: 75%; }
+.carruselprod {width: 100%;
+    justify-content: space-around;}
+.flushprod{ background-color: chocolate;}
+/*SERVICIOS*/
+.contservis{ display:grid;
+    width: 100%;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    grid-column: 0.1em;}
+.servtext{color: white;
+    margin-left: 2em;}
+.imgservis{margin-right: 2em;}    
+.imgservis img{
+    width: 100%;}
+
+
+    /*page proveedores*/
+.formprov {color: white;
+    margin-top: 1em;
+    margin-left: 10em;
+    font-size: larger;}
+  /*page FICHAS*/
+.contfichas { color: white;
+    padding: 2em;}
+.contfichas h5{margin-left: 4em;}
+.tabfichas {width: 500px;
+    margin-left: 4em;}
+.tabredes {width: 400px;
+    margin-left: 4em;}
+
+.tabcont {width: 400px;
+    margin-left: 4em;}
+footer{ width: 100%;
+    height: 5vh;
+    background-color: sienna;
+    color:white;
+    text-align: center;
+}
+.btnini{ margin:1em;
+        }  
+
+
+/*responsive*/
+@media(max-width:1020px){
+
+    .desplegable{
+        display:flex;
+    }
+
+    nav h1{ display:none;}
+
+    ul{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        width: 40vw;
+        height: 100vh;
+        background-color:orangered;
+        top: 15vh;
+        align-content:center;
+        left: -100%;
+    }
+
+    nav ul il{
+        padding: 0.5em ;
+        display: flex;
+        flex-direction: column;
+        padding-left: 1em;
+        border-bottom: solid gray ;
+    }
+
+    #ckbox:checked ~ .menu-box{
+        left: 0;
+    }
+
+    aside {display: flex; 
+        position:relative;
+    }
+    aside .horarios{display:none;}
+    aside .maps{display: none;}
+    main .contportada img{display: none;}
+    main .contportada h3{font-size: larger;}
+    }

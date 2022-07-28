@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale= 1.0, maximun-scale= 1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>LUBRICENTRO</title>
+</head>
+  <header>
+    
+    <nav>
+        <input type="checkbox" id="ckbox">
+        <label for="ckbox" class="desplegable">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <h1>Lubricentro Car Center</h1>
+        <!--ICONOS https://fontawesome.com/v4/icons/-->
+        <ul class="menu-box">
+            <il><a href="index.html" class="fa fa-tint" id="inicio"> INICIO</a></il>
+            <il><a href="#product" class="fa fa-tint"> PRODUCTOS</a></il>
+            <il><a href="#servis" class="fa fa-tint"> SERVICIOS</a></il>
+            <il><a href="./pages/fichas.html" class="fa fa-tint"> FICHAS</a></il>
+            <il><a href="#promos" class="fa fa-tint"> PROMOCIONES</a></il>
+            <il><a href="./pages/contacto.html" class="fa fa-tint"> CONTACTO</a></il>
+        </ul>
+    </nav>
+  </header>
+<body>
+  <main>   
+       
+    <div class="contportada">
+      <div class="textop">
+        <hr>
+        <h3> SERVICIO DE CALIDAD</h3>
+        <br>
+        <h3> RAPIDEZ Y GARANTIA</h3>
+        <br>
+        <h3>CONTROL COMPUTALIZADO</h3>
+        <br>
+        <h3>SOLICITE PRESUPUESTO</h3>
+        <img src="./img/imagen1.png">
+        <img src="./img/imagen2.png">
+        <img src="./img/imagen3.png">
+        <img src="./img/imagen4.png">
+        <hr>
+        <h5> INGRESO PROVEEDORES</h5>
+        <button type="button" class="btn btn-light" onclick="accesoProv()">ACCEDER</button>
+        <!--<button onclick="accesoProv()">ACCEDER</button>-->
+        <hr>
+      </div>
+               
+      <div class="iportada">
+        <img src="./img/pngfondo.png" alt="Servicio de calidad">
+      </div>
+    </div>
+  </main>
+  <aside>
+    <div class="contaside">
+    <!--whatApps-->
+      <div class="wapps"> 
+        <i class="fa fa-whatsapp" aria-hidden="true" ></i>
+         <br>
+          <div class="wappstext">
+          <a href="https://api.whatsapp.com/send?phone=3364337776">Envíanos un mensaje de WhatsApp</a>
+          </div>
+        </div>  
+      </div>
+      <div class="horarios">
+        <div class="iconoh">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        </div>
+        <br>
+        <table class="table table-dark table-striped">
+          <thead>
+            <thead>
+              <tr>
+                <th scope="col" colspan="3">Horarios de atención</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Lun</th>
+                <td>9:30 a 13:00</td>
+                <td>16:00 a 20:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Mar</th>
+                <td>9:30 a 13:00</td>
+                <td>16:00 a 20:00</td>                
+              </tr>
+              <tr>
+                <th scope="row">Mie</th>
+                <td>9:30 a 13:00</td>
+                <td>16:00 a 20:00</td>           
+              </tr>
+              <tr>
+                <th scope="row">Jue</th>
+                <td>9:30 a 13:00</td>
+                <td>16:00 a 20:00</td>           
+              </tr>
+              <tr>
+                <th scope="row">Vie</th>
+                <td>9:30 a 13:00</td>
+                <td>16:00 a 20:00</td>           
+              </tr>
+              <tr>
+                <th scope="row">Sab</th>
+                <td>9:30 a 13:00</td>
+                <td>--</td>           
+              </tr>
+            </tbody>                        
+        </table>
+      </div>
+      <div class="maps">
+        <i class="fa fa-map" aria-hidden="true"></i>
+        <p> Pte. Perón 1278</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4713.048359635901!2d-60.24140700900002!3d-33.35465526583796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b767184b076061%3A0x98036c6a9b533353!2sLubricentro%20Car%20Center!5e0!3m2!1sen!2sar!4v1658811934012!5m2!1sen!2sar" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+        </div>
+      </div>
+    </aside>
+    <section id="product"> 
+      <h3>PRODUCTOS</h3>
+            <!--flush productos-->
+      <div class="flushprod">      
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              LUBRICANTES
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              SINTETICOS - SEMISINTETICOS - MINERALES - HIDRAULICOS - TRANSMISION
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              FILTROS
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">  AIRE - ACEITE - COMBUSTIBLE - HABITACULO </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              REPUESTOS
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse"      aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">BATERIAS - PASTILLAS DE FRENO - BUJIAS Y CABLES  
+              
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class=btnini><a href="#inicio"  class="btn btn-light fa fa-home">Volver a Inicio </a></td></div>
+          <!--CARRUSEL-->
+      <div class="carruselprod">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/baner.svg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/baner2.svg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/baner3.svg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+    </section>
+    <section id="servis">
+      <h3>SERVICIOS</h3>
+      <div class="contservis">
+        <div class="servtext">
+          <h4> CAMBIO DE ACEITE Y FILTROS</H4>
+          <H4> CAMBIO Y CONTROL DE BATERIAS</H4>
+          <h4> ALINEACION Y BALANCEO</H4>
+          <h4> CONTROL Y CAMBIO DE LIQUIDO DE FRENOS <span class="badge bg-secondary">Nuevo</span></h4>
+        </div>
+        <div class="imgservis">
+          <img src="./img/imgservis.png">
+        </div>
+      </div>
+    </section>
+    <div class=btnini><a href="#inicio"  class="btn btn-light fa fa-home">Volver a Inicio </a></td></div>
+    <!--promociones-->
+    <section id="promos">
+      <h3>PROMOCIONES</h3>
+      <div class="flushprod">      
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              CAMBIO DE ACEITE Y FILTROS
+            </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+             1| -10 % OFF <BR>
+             2| 6 CUOTAS SIN INTERES
+            </div>
+            </div>
+          </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              BATERIAS
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">  
+            1| BAT. 12V 75A - 5% OFF EFECTIVO<BR>
+            2| BAT. 12V 110A - HASTA 12 CUOTAS
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              SUPER PROMOS
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse"      aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+          1 | ALINEACION Y BALANCEO + CAMBIO DE ACEITE - 15% OFF
+          <br>
+          2 | BUJIAS X 4 UNI. - 10% OFF EFECTIVO  
+              
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  <footer>  
+    <hr>
+    <h6> Desarrollo Web por: Ramírez Iván - ivram17@hotmail.com</h6>
+    <hr>
+  </footer>
+
+<script src="./Js/stylejs.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>   
+</body>
+</html>
